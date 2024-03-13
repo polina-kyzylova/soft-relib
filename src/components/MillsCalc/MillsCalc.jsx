@@ -88,7 +88,6 @@ export default function MillsCalc() {
   }
 
 
-
   return (
     <div className='mills'>
         <div>
