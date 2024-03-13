@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/soft-relib/static/css/main.219b9073.css",
-    "main.js": "/soft-relib/static/js/main.51362f2f.js",
+    "main.js": "/soft-relib/static/js/main.834b306a.js",
     "static/media/logo.png": "/soft-relib/static/media/logo.63e0d4d84a4f1f4ea69e.png",
     "static/media/mills3.png": "/soft-relib/static/media/mills3.47af99e32b1835a3c1bc.png",
     "index.html": "/soft-relib/index.html",
     "main.219b9073.css.map": "/soft-relib/static/css/main.219b9073.css.map",
-    "main.51362f2f.js.map": "/soft-relib/static/js/main.51362f2f.js.map"
+    "main.834b306a.js.map": "/soft-relib/static/js/main.834b306a.js.map"
   },
   "entrypoints": [
     "static/css/main.219b9073.css",
-    "static/js/main.51362f2f.js"
+    "static/js/main.834b306a.js"
   ]
 }
