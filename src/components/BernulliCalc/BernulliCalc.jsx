@@ -28,16 +28,19 @@ export default function BernulliCalc() {
         document.getElementById('bern_n').style.border = '#7869FF 1.4px solid';
         document.getElementById('bern_n').style.color = '#7869FF';
 
-        if (bern_n >= bern_k && bern_n*bern_k > 0) {
-            let p = Boolean(bernN >= bern_n) ? bern_k / bernN : bern_k / bern_n;
+        let k = Number(bern_k);
+        let n = Number(bern_n);
+
+        if (n >= k && n*k > 0) {
+            let p = Boolean(Number(bernN) >= n) ? k / Number(bernN) : k / n;
             let c = 1;
 
-            for (let i = 0; i < bern_n-bern_k; i++) {
-                c = c * (bern_n-i) / (i+1);
+            for (let i = 0; i < n-k; i++) {
+                c = c * (n-i) / (i+1);
             }
 
-            setBernResult((c * Math.pow(p, bern_k) * Math.pow(1-p, bern_n-bern_k)).toFixed(3));
-            setBernRelib(((1-bern_k/bern_n) * 100).toFixed(2));
+            setBernResult(c * Math.pow(p, k) * Math.pow(1-p, n-k) * 100);
+            setBernRelib(((1-k/n) * 100).toFixed(2));
         }
         else {
             setValid(false);
@@ -95,7 +98,7 @@ export default function BernulliCalc() {
 
             {valid ? 
                 <div className='bern-results'>
-                    <p>Вероятность того, что из {bern_n} запусков {bern_k} приведут <br />к неправильному результату равна <span>{bernResult}</span>
+                    <p>Вероятность того, что из {bern_n} запусков {bern_k} приведут <br />к неправильному результату равна <span>{bernResult.toFixed(2)}%</span>
                     <br/>Надежность ПС составляет <span>{bernRelib}%</span></p>
                 </div> : <h4 id='bern-error'>Ошибка ввода данных</h4>}
         </div>

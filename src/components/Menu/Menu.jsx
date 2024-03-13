@@ -11,15 +11,15 @@ export default function Menu({setModel}) {
     {
       document.getElementById('M').classList.add('focused');
       document.getElementById('B').classList.remove('focused');
-      document.getElementById('P').classList.remove('focused');
+      document.getElementById('S').classList.remove('focused');
     }
     if (e.target.value === 'B') {
       document.getElementById('B').classList.add('focused');
       document.getElementById('M').classList.remove('focused');
-      document.getElementById('P').classList.remove('focused');
+      document.getElementById('S').classList.remove('focused');
     }
-    if (e.target.value === 'P') {
-      document.getElementById('P').classList.add('focused');
+    if (e.target.value === 'S') {
+      document.getElementById('S').classList.add('focused');
       document.getElementById('M').classList.remove('focused');
       document.getElementById('B').classList.remove('focused');
     }
@@ -35,7 +35,7 @@ export default function Menu({setModel}) {
         <div className='items'>
             <button id='M' className='focused' value='M' onClick={handleClick}>Модель Миллса</button>
             <button id='B' value='B' onClick={handleClick}>Модель Бернулли</button>
-            <button id='P' value='P' onClick={handleClick}>Простая интуитивная модель</button>
+            <button id='S' value='S' onClick={handleClick}>Простая интуитивная модель</button>
         </div>
     </div>
   )

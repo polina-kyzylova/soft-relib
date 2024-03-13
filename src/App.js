@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './components/Menu/Menu';
 import Mills from './modules/Mills';
 import Bernulli from './modules/Bernulli';
+import Simple from './modules/Simple';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   function showModel() {
     if (model === 'M') return <Mills />
     if (model === 'B') return <Bernulli />
+    if (model === 'S') return <Simple />
   }
 
   return (

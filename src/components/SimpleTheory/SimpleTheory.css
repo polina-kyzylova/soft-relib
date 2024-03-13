@@ -1,0 +1,29 @@
+.simple-theory {
+    width: 45vw; 
+    height: 84vh;
+}
+
+.simple-theory h1 {
+    font-size: 2.7vw;
+    font-family: "Murecho", sans-serif;
+    color: #6EEAAA;
+}
+
+.simple-theory-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-theory-block img {
+    width: 30vh;
+    align-self: center;
+}
+
+.simple-theory-block p {
+    display: block;
+    font-size: 1vw;
+    font-family: "Murecho", sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
