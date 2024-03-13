@@ -1,0 +1,80 @@
+.container {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7869FF;
+}
+
+.title {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto;
+    column-gap: 0.7vw;
+    align-items: center;
+    justify-items: center;
+    padding-left: 3vw;
+}
+
+.title p {
+    font-size: 1.4vw;
+    font-family: "Murecho", sans-serif;
+}
+
+.logo {
+    height: 5.7vh;
+}
+
+.items {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3);
+    column-gap: 3vw;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    padding-right: 3vw;
+}
+
+.items button {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+    font-family: "Murecho", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.items button:hover {
+    color: #45F49A;
+}
+
+.items button:hover:after {
+    opacity: 1;
+}
+
+button.focused {
+    color: #45F49A;
+}
+
+button.focused:after  {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #6EEAAA;
+    opacity: 1;
+    position: absolute;
+    
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .3s linear;
+}

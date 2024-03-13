@@ -1,0 +1,29 @@
+.mills-theory {
+    width: 45vw; 
+    height: 84vh;
+}
+
+.mills-theory h1 {
+    font-size: 2.7vw;
+    font-family: "Murecho", sans-serif;
+    color: #6EEAAA;
+}
+
+.mills-theory-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mills-theory-block img {
+    width: 30vh;
+    align-self: center;
+}
+
+.mills-theory-block p {
+    display: block;
+    font-size: 1vw;
+    font-family: "Murecho", sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
