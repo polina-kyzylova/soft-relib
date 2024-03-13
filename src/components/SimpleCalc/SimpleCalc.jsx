@@ -105,7 +105,7 @@ export default function SimpleCalc() {
 
             {valid ? 
                 <div className='simple-results'>
-                    <p>Расчетное число ошибок в программе равно <span>{R}</span></p>
+                    <p>Расчетное число ошибок в программе равно <span>{R.toFixed(3)}</span></p>
                     <p>Эффективность первой группы равна <span>{(E1*100).toFixed(2)}%</span></p>
                     <p>Эффективность второй группы равна <span>{(E2*100).toFixed(2)}%</span></p>
                     <p>Надежность ПС составляет <span>{P.toFixed(2)}%</span></p>
