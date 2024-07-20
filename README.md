@@ -4,7 +4,7 @@ By selecting one of the models, users can enter the necessary data and test the 
 
 # Getting Started
 
-### Install packages in project directory
+### Install packages in the project directory
 ### `npm install`
 
 ### Run project
